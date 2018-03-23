@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-1833 537 40 40">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #03a67b;
+      }
+    </style>
+  </defs>
+  <g id="percentage" transform="translate(-1833 537)">
+    <g id="Group_6" data-name="Group 6">
+      <g id="Group_5" data-name="Group 5">
+        <path id="Path_14" data-name="Path 14" class="cls-1" d="M282.688,266a4.688,4.688,0,1,0,4.688,4.688A4.693,4.693,0,0,0,282.688,266Zm0,6.25a1.563,1.563,0,1,1,1.563-1.562A1.564,1.564,0,0,1,282.688,272.25Z" transform="translate(-256.281 -245.219)"/>
+        <path id="Path_15" data-name="Path 15" class="cls-1" d="M122.375,130.688a4.688,4.688,0,1,0-4.687,4.688A4.693,4.693,0,0,0,122.375,130.688Zm-6.25,0a1.563,1.563,0,1,1,1.563,1.563A1.564,1.564,0,0,1,116.125,130.688Z" transform="translate(-104.172 -116.156)"/>
+        <path id="Path_16" data-name="Path 16" class="cls-1" d="M34.142,5.858A20,20,0,0,0,5.858,34.142,20,20,0,0,0,34.142,5.858ZM20,36.875A16.875,16.875,0,1,1,36.875,20,16.894,16.894,0,0,1,20,36.875Z"/>
+        <path id="Path_17" data-name="Path 17" class="cls-1" d="M178.536,136,168.4,154.75h3.552L182.088,136Z" transform="translate(-155.245 -125.375)"/>
+      </g>
+    </g>
+  </g>
+</svg>

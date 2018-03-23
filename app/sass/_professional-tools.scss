@@ -1,0 +1,189 @@
+.bg-professional-tools {
+	max-width: 1366px;
+	height: auto;
+  margin: 67px auto 0;
+  padding-top: 95px;
+  padding-bottom: 52px;
+  background: linear-gradient(
+      rgba(20, 84, 39, 0.8),
+      rgba(20, 84, 39, 0.8)
+    ), url('../img/bg/bg-professional-tools.jpg') no-repeat center;
+  background-size: cover;
+  @include tablet {
+		padding-top: 120px;
+	}
+}
+.row-align {
+	display: flex;
+  align-items: center;
+  @include tablet {
+		display: block;
+	}
+}
+.col-calculator {
+	@include tablet {
+		margin-top: 40px;
+	}
+}
+.professional-tools__title {
+	position: relative;
+  margin-top: -108px;
+	text-align: left;
+	color: $white;
+}
+.professional-tools__text {
+  position: relative;
+  top: 4px;
+	max-width: 345px;
+	line-height: 24px;
+	color: $white;
+}
+.professional-tools__link {
+	position: relative;
+  top: 19px;
+  text-transform: uppercase;
+  font-size: 12px;
+	color: $main;
+	letter-spacing: 3px;
+	&:hover {
+		color: $main-dark;
+	}
+}
+.calculator {
+	display: flex;
+	flex-direction: column;
+}
+.calculator-top,
+.calculator-bottom {
+	padding: 20px;
+	background-color: rgba(255, 255, 255, 0.1);
+	@include laptop-md {
+		flex-direction: column;
+	}
+}
+.calculator-top {
+	display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 27px;
+
+}
+.currency-title {
+	font-size: 11px;
+  letter-spacing: 3px;
+	text-transform: uppercase;
+}
+.currency-left {
+	display: flex;
+	flex-direction: column;
+}
+.equals {
+	margin-top: 34px;
+	font-size: 40px;
+	color: $white;
+}
+.currency-left__header {
+	letter-spacing: 4px;
+	color: $white;
+}
+.input-currency-left,
+.input-currency-right {
+	width: 134px;
+	height: 50px;
+  border-radius: 0;
+  background-color: $ghost;
+  text-align: center;
+  font-size: 23px;
+  appearance: none;
+}
+.input-currency-left,
+.input-currency-right,
+.input-currency-left::placeholder,
+.input-currency-right::placeholder {
+  color: $white;
+}
+.container-select {
+	position: relative;
+}
+.select-currency-left,
+.select-currency-right {
+	width: 93px;
+	height: 50px;
+	padding: 10px 15px;
+  text-align: left;
+  font-size: 17px;
+  background-color: $white;
+  border-color: $white;
+  border-radius: 0;
+  appearance: none;
+  &:hover {
+  	appearance: none;
+  }
+}
+.select-arrow {
+	position: absolute;
+	top: 22px;
+  right: 18px;
+	pointer-events: none;
+	width: 0;
+	height: 0;
+	border: 0 solid $ghost;
+	border-left-width: 7px;
+	border-right-width: 7px;
+	border-top: 7px solid $black;
+}
+.currency-right__header { 
+  letter-spacing: 4px;
+	text-align: right;
+	color: $main;
+	@include laptop-md {
+		text-align: left;
+	}
+}
+.wrapper-inputs {
+	display: flex;
+	padding-top: 12px;
+}
+.calculator-bottom {
+  margin-top: 10px;
+  padding: 15px 20px 0;
+}
+.sup-red {
+	color: $alarm;
+}
+.sup-green {
+	color: $main;
+}
+.sup-red,
+.sup-green {
+	top: -9px;
+	font-size: 9px;
+}
+.table > thead > tr > .calculator-table__th,
+.table > tbody > tr > .calculator-table__td {
+    border: none !important;
+}
+.calculator-table__th {
+	width: 37%;
+	text-transform: uppercase;
+}
+.calculator-table__td {
+	font-size: 17px;
+}
+.calculator-table__th,
+.calculator-table__td {
+	color: $white;
+}
+.calculator-table__th {
+	font-size: 11px;
+  letter-spacing: 3px;
+}
+.table-text-right {
+	text-align: right;
+}
+.table > tbody > tr > .td-first-row {
+	padding-top: 20px;
+}
+.table > tbody > tr > td {
+	padding-top: 0;
+}

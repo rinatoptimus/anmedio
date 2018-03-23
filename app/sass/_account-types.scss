@@ -1,0 +1,129 @@
+.container--account-types {
+  margin-top: 50px;
+  margin-bottom: 29px;
+}
+.panel-custom {
+	padding: 13px 33px 32px;
+	border-radius: 0;
+	text-align: center;
+}
+.subtitle {
+  margin-bottom: 22px;
+}
+.account-type-name {
+	text-transform: uppercase;
+	font-size: 50px;
+	font-weight: bold;
+	color: $main;
+}
+.account-type-descr {
+  margin-top: 10px;
+  line-height: 24px;
+}
+.account-type-divider {
+  margin-top: 57px;
+  margin-bottom: 33px;
+}
+.account-type-list__item {
+	display: flex;
+  justify-content: space-between;
+  height: 30px;
+}
+.alternative {
+	margin-top: 27px;
+	font-size: 12px;
+  letter-spacing: 3px;
+	text-transform: uppercase;
+	text-align: center;
+  transition: all ease-in-out 0.7s;
+}
+.alternative__highlight {
+  color: $main;
+  &:hover {
+    color: $main-dark;
+  }
+}
+.account-type-btn {
+	margin-top: 20px;
+  width: 100%;
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: $main;
+  border-color: $main;
+  transition: all ease-in-out 0.2s;
+  &:hover {
+  	background-color: $main;
+  	border-color: $main;
+  	color: $white;
+  }
+  @include tablet-lg {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
+
+/* ---------- RIBBON ---------- */
+.ribbon {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  width: 40px;
+  padding: 0;
+  background: $main;
+  text-align: center;
+  font-weight: 700;
+  color: $white;
+  font-size: 7px;
+  @include tablet {
+    font-size: 9px;
+  }
+}
+.ribbon * {
+  box-sizing: border-box;
+}
+.ribbon:after {
+  content: " ";
+  position: absolute;
+  top: 70%;
+  left: 0;
+  z-index: 10;
+  border-style: solid;
+  width: 0;
+  height: 0;
+  border-width: 30px;
+  border-color: $main $main $ghost $main;
+  border-width: 20px;
+  border-top-width: 8px;
+  border-bottom-width: 12px;
+  top: 30px;
+}
+.star {
+  position: relative;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: .9em;
+  margin-right: .9em;
+  margin-bottom: 1.2em;
+  border-right: .3em solid $ghost;
+  border-bottom: .7em  solid $white;
+  border-left: .3em solid $ghost;
+  font-size: 14px;
+  top: 6px;
+}
+.star:before, .star:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: .6em;
+  left: -1em;
+  border-right: 1em solid $ghost;
+  border-bottom: .7em  solid $white;
+  border-left: 1em solid $ghost;
+  transform: rotate(-35deg);
+}
+.star:after {
+  transform: rotate(35deg);
+}

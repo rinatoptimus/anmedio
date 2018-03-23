@@ -1,0 +1,93 @@
+.bg-open-account {
+	display: flex;
+  align-items: center;
+  top: 114px;
+  position: relative;
+  width: 100vw;
+  overflow: hidden;
+  max-width: 1366px;
+  margin: 0 auto;
+  height: auto;
+  padding-top: 45px;
+  padding-bottom: 75px;
+  @include tablet-lg {
+    display: block;
+    padding-top: 17px;
+  }
+}
+.bg-open-account .container {
+  position: relative;
+  z-index: 2;
+}
+.bg-open-account:after {
+  content:"";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+      rgba(20, 84, 39, 0.5),
+      rgba(20, 84, 39, 0.5)
+    ), url('../img/bg/bg-jumbotron.jpg') no-repeat center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(7px);
+  transform: scale(1.1);
+}
+.open-account-title {
+	text-align: left;
+	color: $white;
+}
+.open-account-text {
+	position: relative;
+  top: -1px;
+  margin-bottom: 0;
+  max-width: 500px;
+  line-height: 23px;
+	color: $white;
+}
+.open-account-btns-group {
+	position: relative;
+	top: 54px;
+	text-align: right;
+	@include tablet-lg {
+		top: 0;
+		margin-top: 54px;
+    text-align: left;
+  }
+  @include phone-lg {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.open-account-btn {
+	padding: 17px 42px;
+	font-size: 12px;
+	color: $white;
+}
+.open-account-btn__left {
+	margin-right: 15px;
+	background-color: $main;
+	border: none;
+	transition: all ease-in-out 0.2s;
+	@include phone-lg {
+		margin-right: 0;
+    margin-bottom: 15px;
+  }
+  &:hover {
+		background-color: $main-dark;
+		color: $white;
+	}
+}
+.open-account-btn__right {
+	background-color: $ghost;
+	border-color: $white;
+	transition: all ease-in-out 0.2s;
+	&:hover {
+		border-color: $main-dark;
+		background-color: $main-dark;
+		color: $white;
+	}
+}

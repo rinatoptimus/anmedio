@@ -1,0 +1,23 @@
+.container-news {
+  margin-top: 50px;
+}
+.news-header {
+	text-align: left;
+}
+.news-item {
+  margin-top: 39px;
+}
+.news-date {
+	font-size: 13px;
+  letter-spacing: 5px;
+}
+.news-title {
+	margin-top: 3px;
+	font-size: 28px;
+  line-height: 32px;
+  color: $main;
+}
+.news-text {
+  margin-top: 19px;
+  line-height: 24px;
+}

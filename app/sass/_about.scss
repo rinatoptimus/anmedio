@@ -1,0 +1,233 @@
+.wrapper-bg-blurred {
+	max-width: 1366px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.navbar--custom {
+  margin-bottom: 0;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: $ghost;
+  border: none;
+}
+.container-fluid--custom {
+  padding-right: 0;
+}
+.bg-blurred {
+  left: -30px;
+  top: 0;
+	width: 100%;
+	height: 785px;
+	margin: 0 auto;
+	background: linear-gradient(
+      rgba(20, 84, 39, 0.5),
+      rgba(20, 84, 39, 0.5)
+    ), url('../img/bg/bg-jumbotron.jpg') no-repeat center;
+  background-size: cover;
+  filter: blur(7px);
+}
+.content-sharp--descr {
+  position: relative;
+  text-align: center;
+  color: $white;
+  margin-top: 73px;
+}
+.content-sharp--descr__text {
+	max-width: 480px;
+	margin: 20px auto 0;
+  line-height: 24px;
+}
+.content-sharp--descr__btn{
+	position: relative;
+  top: 40px;
+  border: none;
+  background-color: $main;
+  color: $white;
+  transition: all ease-in-out 0.2s;
+  &:hover {
+    background-color: $main-dark;
+    color: $white;
+  }
+}
+.content-sharp--features {
+  margin-top: 120px;
+  position: relative;
+  color: $white;
+}
+.col-custom {
+  @include tablet-lg {
+    margin-bottom: 35px;
+  }
+  @include tablet {
+    text-align: center;
+  }
+}
+.col-custom--bottom {
+  @include tablet {
+    margin-bottom: 35px;
+    text-align: center;
+  }
+}
+.content-sharp--features__header {
+  margin-top: 25px;
+}
+.content-sharp--features__icon {
+	width: 40px;
+  height: 40px;
+  display: block;
+  @include tablet {
+    margin: 0 auto;
+  }
+}
+.content-sharp--features__icon-graph {
+  background: url('../img/icons/icon-graph.svg') no-repeat;
+}
+.content-sharp--features__icon-search {
+  background: url('../img/icons/icon-search.svg') no-repeat;
+}
+.content-sharp--features__icon-settings {
+  background: url('../img/icons/icon-settings.svg') no-repeat;
+}
+.content-sharp--features__icon-percentage {
+  background: url('../img/icons/icon-percentage.svg') no-repeat;
+}
+.content-sharp--features__text {
+  position: relative;
+  top: 8px;
+	line-height: 24px;
+}
+.wrapper-top-menu {
+  z-index: 55;
+  position: relative;
+  margin-top: 50px;
+  display: flex;
+  align-items: flex-end;
+	width: 1366px;
+	background-color: $white;
+	font-size: 15px;
+  @include laptop {
+    width: 100vw;
+  }
+}
+.container-navbar {
+  @include tablet-lg {
+    width: 100%;
+  }
+}
+.navbar__container-fluid {
+	margin-top: -5px;
+	padding-right: 0;
+}
+.navbar-brand--custom {
+  width: 77px;
+  margin-right: 34px;
+	background-color: $main;
+  @include tablet-lg {
+    margin-right: 0;
+  }
+}
+.navbar > .container-fluid {
+  @include tablet-md {
+    margin-right: 25px;
+    margin-left: 25px;
+  }
+}
+.navbar-header--custom {
+	display: flex;
+}
+.list-single-item {
+  position: relative;
+  margin-left: 8px;
+  margin-top: 13px;
+}
+.dropdown--single {
+	float: left;
+  position: relative;
+  display: block;
+}
+.navbar-right {
+  @include tablet-md {
+    float: left !important;
+    margin-top: 10px;
+    margin-left: -35px;
+  }
+  @include tablet {
+    margin-top: -10px;
+    margin-left: -10px;
+  }
+} 
+.nav > li > .navbar-right--custom__link {
+  padding-left: 15px;
+  padding-right: 19px;
+}
+.navbar-right--custom__link {
+  color: $black;
+}
+.caret-custom {
+	margin-left: 7px;
+	border-top: 6px dashed;
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+  color: $main;
+}
+.btn-navbar {
+  margin-top: 4px;
+  margin-left: 20px;
+  padding: 9px 30px;
+  border-color: $main;
+  color: $main;
+  text-transform: none;
+  transition: all ease-in-out 0.2s;
+  &:hover {
+    background-color: $main;
+    border-color: $main;
+    color: $white;
+  }
+}
+.navbar-nav--item {
+  margin-right: 1px;
+}
+.navbar-default .navbar-nav > li > .navbar-nav-left--link,
+.navbar-default .navbar-nav > li > .navbar-nav--link {
+  font-size: 16px;
+  color: $black;
+}
+.bg-jumbotron {
+  position: relative;
+  width: 100vw;
+  min-height: 800px;
+  overflow: hidden;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding-bottom: 25px;
+  @include tablet-lg {
+    min-height: 1050px;
+  }
+  @include tablet {
+    min-height: 1250px;
+  }
+  @include phone-xl {
+    min-height: 1420px;
+  }
+}
+.bg-jumbotron .container {
+  position: relative;
+  z-index: 2;
+}
+.bg-jumbotron:after {
+  content:"";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+      rgba(20, 84, 39, 0.5),
+      rgba(20, 84, 39, 0.5)
+    ), url('../img/bg/bg-jumbotron.jpg') no-repeat center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(7px);
+  transform: scale(1.1);
+}
